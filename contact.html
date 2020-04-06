@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
  <html>
 <head>
  
@@ -15,16 +15,23 @@
 <link href='https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
 <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 </head>
  <body>
      <!-- The sidebar -->
-<div class="sidebar">
-  <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="about.html"><i class="fa fa-fw fa-user"></i> About</a>
-  <a href="skills.html"><i class="fa fa-gear fa-spin"></i> Skills</a>
-  <a href="#portifolio"><i class="fa fa-eye"></i> Works</a>
-  <a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-  
+     <div class="sidebar">
+      <div class ="toggle">
+      <i class="fa fa-bars menu" aria-hidden="true"></i>
+    </div>
+
+    <ul class="ul">
+       
+     <li><a href="index.html"><i class="fa fa-fw fa-home"></i><span class="nav"> Home</span></a></li> 
+      <li><a href="about.html"><i class="fa fa-fw fa-user"></i><span class="nav"> About</span></a></li>
+     <li><a href="skills.html"><i class="fa fa-cog"></i><span class="nav"> Skills</span></a></li>
+     <li><a href="#portifolio"><i class="fa fa-eye"></i><span class="nav"> Works</span></a></li>
+      <li><a href="contact.html"><i class="fa fa-fw fa-envelope"></i><span class="nav"> Contants</span></a></li>
+    </ul>
  
    <div class="mobile">
         <a href="https://www.instagram.com/abuukantu/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
@@ -73,6 +80,13 @@
 </span>
 
     </div>
-  
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      $('.menu').click(function(){
+        $('ul').toggleClass('active');
+    })
+    })
+    </script>
     </body>
     </html>
